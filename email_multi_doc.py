@@ -54,7 +54,7 @@ class email_multi_doc(osv.osv_memory):
                 DtFin = doc['data_documento']
                 NrFin = doc['name']
                 anr = doc['id']
-        return{'dadata':DtIni,'adata':DtFin,'danrv':NrIni,'anrv':NrFin,'sconto':False,'prezzi':False}
+        return{'dadata':DtIni,'adata':DtFin,'danrv':NrIni,'anrv':NrFin,'sconto':False,'prezzi':False, 'agente':0}
 
  def _build_contexts(self, cr, uid, ids, data, context=None):
         #import pdb;pdb.set_trace()
